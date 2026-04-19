@@ -288,7 +288,7 @@ nav.scrolled {
 .glass:hover {
   border-color: var(--border-h);
   background: var(--surface-h);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(79, 195, 247, 0.05) inset;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
 }
 
 .glass-glow {
@@ -607,13 +607,17 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: 1.25rem;
   margin-bottom: 1.25rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .about-info-stack {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+}
+
+.about-info-stack .about-detail-card {
+  flex: 1;
 }
 
 .about-bottom {
