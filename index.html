@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audrey Zhang</title>
+  <meta name="description" content="CS & Math student at Cornell, Aspiring ML researcher, photographer.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Aurora Background -->
+  <canvas id="aurora-canvas"></canvas>
+  <div class="stars-layer"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="nav-logo">AZ✦</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="index.html#about">About Me</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="pages/photography.html">Photography</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="page-content">
+
+    <!-- ═══════════════════ HERO ═══════════════════ -->
+    <section class="hero" style="max-width:none; padding-left:0; padding-right:0;">
+      <div style="max-width:1100px; margin:0 auto; padding:0 2.5rem; position:relative;">
+
+        <p class="hero-eyebrow parallax-layer" data-depth="0.02">CS & Math @ Cornell · Aspiring ML Researcher ·
+          Photographer</p>
+
+        <h1 class="hero-name parallax-layer" data-depth="0.03">
+          <span class="highlight">Audrey Zhang</span>
+        </h1>
+
+        <p class="hero-title parallax-layer" data-depth="0.025">
+          building all things between numbers and narrative
+        </p>
+
+        <p class="hero-desc parallax-layer" data-depth="0.02">
+          CS & Math major and <a href="https://milstein-program.as.cornell.edu/audrey-zhang" target="_blank"
+            style="color: var(--accent); text-decoration: underline; text-underline-offset: 3px; font-style: italic;">
+            Milstein Scholar</a>
+          at Cornell University, with a passion in building ML systems for
+          creative technology. From music and literature to astronomy and photography, I aspire to bridge the gap
+          between data and human-centric narratives, developing technology for good.
+        </p>
+
+        <div class="hero-actions parallax-layer" data-depth="0.015">
+          <a href="#projects" class="btn btn-primary">
+            View Projects
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          <a href="pages/photography.html" class="btn btn-secondary">Photography</a>
+        </div>
+
+        <!-- Orbiting decoration -->
+        <div class="orbit-deco parallax-layer" data-depth="0.06">
+          <div class="orbit-ring orbit-ring-1">
+            <div class="orbit-dot"></div>
+          </div>
+          <div class="orbit-ring orbit-ring-2">
+            <div class="orbit-dot orbit-dot-2"></div>
+          </div>
+          <div class="orbit-ring orbit-ring-3">
+            <div class="orbit-dot orbit-dot-3"></div>
+          </div>
+        </div>
+
+        <div class="hero-scroll">
+          <div class="hero-scroll-line"></div>
+          Scroll to explore
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ ABOUT ═══════════════════ -->
+    <section id="about">
+      <p class="section-label fade-in">About Me</p>
+      <h2 class="section-title fade-in">Where I'm active in</h2>
+      <p class="section-sub fade-in">
+        Skills, extracurriculars, awards, courses
+      </p>
+
+      <!-- Row 1: bio left, info cards right -->
+      <div class="about-top stagger-children">
+
+        <div class="glass about-card">
+          <p class="about-bio">
+            CS &amp; Math at Cornell University, <a href="https://milstein-program.as.cornell.edu/" target="_blank"
+              style="color:var(--accent);text-decoration:underline;text-underline-offset:3px;font-style:italic;">Milstein
+              Scholar in Technology and Humanity</a> — a cohort of 25 exploring the intersection of technology and
+            humanity. My work spans ML research, math modeling, and data analysis. Read more about my projects.
+          </p>
+          <p class="about-bio" style="margin-bottom:0;">
+            Outside of academics, you'll find me side questing on one of my many hobbies. I'm a photographer
+            chasing the sunset and the Milky Way, hiking all the national parks, or binging a good movie.
+          </p>
+          <div style="margin-top:2rem;">
+            <p class="about-detail-label">Study</p>
+            <div class="about-pill-group">
+              <span class="about-pill about-pill--accent">B.A. Computer Science</span>
+              <span class="about-pill about-pill--accent">B.A. Mathematics</span>
+              <span class="about-pill-sep">minor in</span>
+              <span class="about-pill">Law &amp; Society</span>
+            </div>
+            <p style="font-size:0.65rem;color:var(--text-faint);margin-top:0.75rem;letter-spacing:0.05em;">Cornell
+              University · 2025–2028</p>
+          </div>
+        </div>
+
+        <div class="about-info-stack">
+          <div class="glass about-detail-card">
+            <p class="about-detail-label">Activities</p>
+            <ul class="about-list">
+              <li>Cornell Data Science <span class="about-list-meta">Data Scientist</span></li>
+              <li>Cornell Tech Consulting <span class="about-list-meta">Technology Team</span></li>
+              <li>Assoc. of CS Undergrads <span class="about-list-meta">Academic Officer</span></li>
+              <li>Cornell Daily Sun <span class="about-list-meta">Photographer</span></li>
+            </ul>
+          </div>
+          <div class="glass about-detail-card">
+            <p class="about-detail-label">Honours &amp; Awards</p>
+            <ul class="about-list">
+              <li>Cornell Math Modeling <span class="about-list-meta">2nd place · 2025</span></li>
+              <li>NOAI — Natl. Olympiad in AI <span class="about-list-meta">Top 10% · 2024</span></li>
+              <li>USACO <span class="about-list-meta">Gold · 2024</span></li>
+              <li>IMMC Math Modeling <span class="about-list-meta">Top 2% · 2022</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Row 2: skills / courses / outside in equal thirds -->
+      <div class="about-bottom stagger-children">
+
+        <div class="glass about-detail-card">
+          <p class="about-detail-label">Technical Skills</p>
+          <div class="about-pill-group">
+            <span class="about-pill about-pill--accent">Python</span>
+            <span class="about-pill about-pill--accent">C++</span>
+            <span class="about-pill about-pill--accent">Java</span>
+            <span class="about-pill about-pill--accent">Rust</span>
+            <span class="about-pill about-pill--accent">OCaml</span>
+            <span class="about-pill about-pill--accent">HTML/CSS/JS</span>
+            <span class="about-pill">ML / NLP</span>
+            <span class="about-pill">LaTeX</span>
+            <span class="about-pill">R</span>
+            <span class="about-pill">Lightroom</span>
+          </div>
+        </div>
+
+        <div class="glass about-detail-card">
+          <p class="about-detail-label">Courses</p>
+          <div class="about-pill-group">
+            <span class="about-pill">Data Structures</span>
+            <span class="about-pill">Functional Programming</span>
+            <span class="about-pill">Linear Algebra</span>
+            <span class="about-pill">Discrete Math</span>
+            <span class="about-pill">Intro to ML</span>
+            <span class="about-pill">AI Ethics &amp; Policy</span>
+            <span class="about-pill">Quant Finance</span>
+            <span class="about-pill">Calculus III</span>
+          </div>
+        </div>
+
+        <div class="glass about-detail-card">
+          <p class="about-detail-label">Hobbies</p>
+          <div class="about-pill-group">
+            <span class="about-pill about-pill--green">Photography</span>
+            <span class="about-pill about-pill--green">Astronomy</span>
+            <span class="about-pill about-pill--green">Soccer</span>
+            <span class="about-pill about-pill--green">Hiking</span>
+            <span class="about-pill about-pill--green">Sci-fi books</span>
+            <span class="about-pill about-pill--green">Movies</span>
+            <span class="about-pill about-pill--green">R&amp;B music</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- ═══════════════════ EXPERIENCE ═══════════════════ -->
+    <section id="experience" style="padding-top:0;">
+      <p class="section-label fade-in">Experience</p>
+      <h2 class="section-title fade-in">Where I've contributed</h2>
+      <p class="section-sub fade-in">
+        Some real cool experiences
+      </p>
+
+      <div class="timeline stagger-children">
+
+        <div class="glass timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-role">Undergraduate Research Assistant</span>
+            <span class="timeline-date">Feb 2026 – Present</span>
+          </div>
+          <p class="timeline-org">@ Culture and Computation Lab, Cornell University</p>
+          <p class="timeline-desc">
+            Conducting computational analysis of character mobility in novels through NLP spatial modeling and literary
+            data annotation.
+          </p>
+        </div>
+
+        <div class="glass timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-role">Machine Learning Research Intern</span>
+            <span class="timeline-date">Jun – Aug 2024</span>
+          </div>
+          <p class="timeline-org">@ Tencent Music Entertainment</p>
+          <p class="timeline-desc">
+            Developed an RNN model for symbolic music generation trained on piano pop song adaptations.
+            Collaborated with engineers and musicians to integrate AI-assisted composition into a charity song
+            for Alzheimer's awareness — officially released on QQ Music as part of Tencent's annual charity campaign.
+          </p>
+        </div>
+
+        <div class="glass timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-role">Yuanpei Young Scholar</span>
+            <span class="timeline-date">Jan – May 2024</span>
+          </div>
+          <p class="timeline-org">@ Peking University</p>
+          <p class="timeline-desc">
+            Researched multimodal fusion models integrating text and image embeddings to detect harmful content in
+            internet memes.
+            Surpassed traditional single-modality methods with 71.67% accuracy on toxic information identification.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════ PROJECTS ═══════════════════ -->
+    <section id="projects" style="padding-top:0;">
+      <p class="section-label fade-in">Selected Projects</p>
+      <h2 class="section-title fade-in">Things I've built</h2>
+      <p class="section-sub fade-in">
+        A mix of research projects, side projects, and experiments.
+      </p>
+
+      <div class="projects-grid stagger-children">
+
+        <div class="glass project-card">
+          <div class="project-number">01</div>
+          <h3 class="project-title">ML-Based Cache Eviction</h3>
+          <p class="project-desc">
+            A learning-based cache eviction policy in Rust that predicts eviction priorities using ML signals,
+            improving hit rate by 8.7% over the heuristic baseline.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Rust</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Systems</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/CornellDataScience/learning-based-cache-eviction" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77a5.07 5.07 0 00-.09-3.77S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="glass project-card">
+          <div class="project-number">02</div>
+          <h3 class="project-title">Meme Toxicity Detector</h3>
+          <p class="project-desc">
+            Multimodal fusion model integrating text and image embeddings to detect harmful content in internet memes.
+            Achieved 71.67% accuracy, outperforming single-modality baselines.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Multimodal ML</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Computer Vision</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77a5.07 5.07 0 00-.09-3.77S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="glass project-card">
+          <div class="project-number">03</div>
+          <h3 class="project-title">RNN Music Generation</h3>
+          <p class="project-desc">
+            Trained an RNN on piano pop song adaptations to generate MIDI melodies. Integrated into Tencent's
+            charity song for Alzheimer's awareness, officially released on QQ Music.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">RNN</span>
+            <span class="tag">MIDI</span>
+            <span class="tag">Music Generation</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77a5.07 5.07 0 00-.09-3.77S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="glass project-card">
+          <div class="project-number">04</div>
+          <h3 class="project-title">SafeRide Carshare Platform</h3>
+          <p class="project-desc">
+            Ride-scheduling platform built with Node.js. Provided consulting on improving platform visibility and
+            accessibility among Cornell students.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Platform Design</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/audreyrz/saferide_sp26" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77a5.07 5.07 0 00-.09-3.77S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="glass project-card">
+          <div class="project-number">05</div>
+          <h3 class="project-title">Foreign Aid Global Dataset</h3>
+          <p class="project-desc">
+            Web-scraped and compiled an original dataset on global foreign aid flows. Reached 3,200+ downloads on
+            Kaggle.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Web Scraping</span>
+            <span class="tag">Data Analysis</span>
+            <span class="tag">Kaggle</span>
+          </div>
+          <div class="project-links">
+            <a href="https://www.kaggle.com/audreyhengruizhang/datasets" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+              </svg>
+              Kaggle
+            </a>
+          </div>
+        </div>
+
+        <!-- View more card -->
+        <a href="https://github.com/audreyrz" target="_blank" class="glass project-card"
+          style="display:flex;align-items:center;justify-content:center;text-align:center;gap:1rem;flex-direction:column;min-height:180px; text-decoration:none;">
+          <div style="font-size:2rem;opacity:0.3;">→</div>
+          <div>
+            <div
+              style="font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--text);margin-bottom:0.25rem;">
+              View All on GitHub</div>
+            <div style="font-size:0.75rem;color:var(--text-faint);">https://github.com/audreyrz</div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════ CONTACT ═══════════════════ -->
+    <section id="contact">
+      <p class="section-label fade-in">Contact</p>
+      <h2 class="section-title fade-in">Let's build something<br>together</h2>
+      <p class="section-sub fade-in">
+        Whether it's a project collaboration, research opportunity, internship,
+        or just a chat about photography — my inbox is open.
+      </p>
+
+      <div class="contact-grid stagger-children">
+
+        <div class="glass contact-info">
+          <h3>Say hello</h3>
+          <p>
+            I'm looking for Winter/Summer 2027 internship and research opportunities.
+            If you have a role or project that might be a fit, I'd love to hear from you.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:hz756@cornell.edu" class="contact-link">
+              <div class="contact-link-icon">✉</div>
+              hz756@cornell.edu
+            </a>
+            <a href="https://www.linkedin.com/in/audrey-zhang07/" target="_blank" class="contact-link">
+              <div class="contact-link-icon">in</div>
+              https://www.linkedin.com/in/audrey-zhang07/
+            </a>
+            <a href="https://github.com/audreyrz" target="_blank" class="contact-link">
+              <div class="contact-link-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77a5.07 5.07 0 00-.09-3.77S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+              </div>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="glass contact-form">
+          <form action="https://formspree.io/f/xdayzwel" method="POST">
+            <div class="form-group">
+              <label class="form-label">Name</label>
+              <input class="form-input" type="text" name="name" placeholder="Jane Smith" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input class="form-input" type="email" name="email" placeholder="jane@example.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea class="form-textarea" name="message" placeholder="Tell me about your project..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </div><!-- /page-content -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-left">
+      <div class="footer-brand">AZ✦</div>
+      <div>© 2026 Audrey Zhang. </div>
+    </div>
+    <div class="footer-socials">
+      <a href="https://github.com/audreyrz" class="footer-social" target="_blank">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77a5.07 5.07 0 00-.09-3.77S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/audrey-zhang07/" class="footer-social" target="_blank">in</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

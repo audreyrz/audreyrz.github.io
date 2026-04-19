@@ -1,0 +1,7 @@
+# GitHub Pages configuration
+# This file tells GitHub Pages how to serve your site.
+# No Jekyll processing needed since this is plain HTML/CSS/JS.
+
+exclude:
+  - README.md
+  - "*.sh"
